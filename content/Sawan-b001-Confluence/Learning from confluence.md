@@ -2,9 +2,39 @@
 
 Read about the flow of Twikey Signing Mechanism for NL, BE, FR and the Test Data for every region including proudct data and Signing Data for Pro Card
 
-### Pull Request
+## Pull Request
 
 Read about the Conditions to check before creating a PR and While Reviewing the PR. How a PR Should be check before Merging
+#### Before Creating a PR
+
+1. Have merged the latest copy of Develop fist
+2. check for difference for anything that can accidently commited to the branch
+- look out for files that should not be in commit but can be in the   git igonre file
+3. Have followed all coding standards
+- Appropropriate functions/class/etc names
+- Code has been annotated commented where applicable
+4. if necessary update readme file
+5. test have been added/updated to reflect acceptance criteria
+6. All existing and new tests are passing locally
+7. Check dependancy have been added correctly 
+
+#### When creating a PR
+
+- Add any additional testing steps/guide beyond what is defined in the ticket
+- Add any other dependancies (e.g branches and PRs) to the description of the PR being opened
+- If lots of changes have been made, adding an explanation of why can be helpful if you have had to do something for a specific reason.his saves time and means the person reviewing won't have to ask questions
+- Add screenshots of changes (where appropriate)
+- If specific reviewers are required they can be assigned, but don't need to be - everyone should be reviewing PRs
+
+##### When reviewing a PR
+
+- Follow the same checks you would make when creating a pull request
+- Small PRs can be merged once one person has approved
+- Larger PRs can be merged once two people have approved (and all tests are passing)
+- When merging (and moving ticket to done) Ensure the release version is added to the ticket
+- Add any translation updates to the release page in Confluence
+- Add any env/config change requirements to the release page
+
 ### Definition of Done
 
 All the points which are listed must be passed like there must be no reproducable bug, QA Tested all nd all the criteria must be passed to.
@@ -37,6 +67,15 @@ Monitor Crashlytics and Datadog for 3 to 7 days
 
  ### Bloomreach Prodcuts Recommendation
 
+ ##### Bloomrach widget 
+ The Widget Configurator is a functionality within the Bloomreach Dashboard that allows you to create and manage the Recommendations and Pathways widgets easily. we can create, delete, manage, change the widget type according to our need of services.
+ In Toolstation we are using following bloomreach widgets like:
+
+ top_seller_id
+ recommended_home_id
+ recommended_products_id
+ _fallback_recommended_id
+
  - APi
  - Widgets ID's Currently in use there App locations, Name, Widget ID, Widget Param, searcserviceMethdo
 
@@ -65,7 +104,7 @@ Next Day Collection allows a customer to order items for collection on the next 
 
 ## Content Square
 
-Researchj about the Content sqaure Packageand get to know thatit is used to track all mouse movements, clicks and mobile interactions inside your site or app
+Contentsquare is basically used for Analytics. it is an SDK in the mobile app, Contentsquare anonymously tracks all mouse movements, clicks and mobile interactions inside your site or app. The tracking data is then securely sent to Contentsquare servers, where it is aggregated and prepared for analysis. Contentsquare transforms this anonymous data into actionable insights and recommendations for your team.
 
 - Impplementation of content sqaure pacxkage
 
@@ -76,8 +115,15 @@ Researchj about the Content sqaure Packageand get to know thatit is used to trac
 
 ### Features & feature flags per region [TBC]
 
+These are the features that we can turn on/ off on the fly for PROD or preProd(dev env) using remote config in Firebase including the EU region & language switching. 
+
+**Firebase Remote Config** is a cloud service that lets you change the behavior and appearance of your app without requiring users to download an app update. When using Remote Config, you create in-app default values that control the behavior and appearance of your app.  
+we can easily change the feature flag for Toolstation Mobile App Dev from Remote Config in Firebase.
 
 ###### Payments services used in differnet region ike NL: ideal, BrainTree/Paypal, G PAy, Apple Pay, Brain Tree Card
 
 - Steps of App Development LifeCycle
-- TS Deeplinks
+### TS Deeplinks
+
+The TS Deeplinks gives you access to a web browser link that directs you to a particular section of an already-installed app. Additionally, these links can be configured to direct viewers to particular content pages (such as events, news updates, and more) and transmit personalized data (like promo codes).
+
