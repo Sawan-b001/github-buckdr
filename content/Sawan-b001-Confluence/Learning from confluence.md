@@ -41,3 +41,31 @@ Monitor Crashlytics and Datadog for 3 to 7 days
  - Widgets ID's Currently in use there App locations, Name, Widget ID, Widget Param, searcserviceMethdo
 
  ### Bloomreach Product search
+
+ curent imlemented functionality
+
+ - can suggest products along with queries in your autosuggest API calls. When a visitor to your site begins typing a query, the autosuggest call retrieves a text-based list of queries as well as products. By default, the response includes a maximum of eight products.
+
+- Input String
+- Request
+- Output
+- API Rsponse
+-  **PLP In Stock** 
+
+### Next Day Collection 
+
+Next Day Collection allows a customer to order items for collection on the next business day from their favourite brach if there is currently insufficient stock at the brach for a same day collection. This allows customers access to delivery stock without having to pay for delivery.
+
+- Trolley 
+- Cut-Off Time Messages
+- SWITCHING FROM DELIVERY
+- Order History
+- Saved Lists
+
+
+## Content Square
+
+Researchj about the Content sqaure Packageand get to know thatit is used to track all mouse movements, clicks and mobile interactions inside your site or app
+
+- Impplementation of content sqaure pacxkage
+ 
