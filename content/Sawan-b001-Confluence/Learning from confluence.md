@@ -68,4 +68,16 @@ Next Day Collection allows a customer to order items for collection on the next 
 Researchj about the Content sqaure Packageand get to know thatit is used to track all mouse movements, clicks and mobile interactions inside your site or app
 
 - Impplementation of content sqaure pacxkage
- 
+
+
+###### Bloomreach Engagement
+###### Facebook App Events
+
+
+### Features & feature flags per region [TBC]
+
+
+###### Payments services used in differnet region ike NL: ideal, BrainTree/Paypal, G PAy, Apple Pay, Brain Tree Card
+
+- Steps of App Development LifeCycle
+- TS Deeplinks
